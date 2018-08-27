@@ -30,7 +30,7 @@ var promiseDoubanData = function (host, id) {
 
   switch (type) {
     case 'book':
-      fields = 'id,title,url,image,publisher,pubdate,subtitle,author,translator,price,rating,summary';
+      fields = 'id,title,alt,image,publisher,pubdate,subtitle,author,translator,price,rating,summary';
       break;
     // case 'movie':
     //   fields = 'title,alt,image,pubdate';
@@ -70,7 +70,7 @@ var renderTpl = function (type, data) {
   switch (type) {
     case 'book':
       tpl = [
-        '<a href="' + data.url + '" target="_blank" style="color: #666;display:block;">',
+        '<a href="' + data.alt + '" target="_blank" style="color: #666;display:block;">',
           '<img src="' + data.image + '?apikey=0e13da30b101d57c2a3b8e9213058074" alt="' + data.title + '" style="width: 135px; height: 192px; display:inline-block; margin-right: 14px;" />',
           '<div class="info" style="display:inline-block; vertical-align: top;">',
             '<p style="margin:0; font-size: 14px;">书名：' + data.title + '</p>',
