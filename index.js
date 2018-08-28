@@ -71,7 +71,7 @@ var renderTpl = function (type, data) {
     case 'book':
       tpl = [
         '<a href="' + data.alt + '" target="_blank" style="color: #666;display:block;">',
-          '<img src="' + data.image + '?apikey=0e13da30b101d57c2a3b8e9213058074" alt="' + data.title + '" style="width: 135px; height: 192px; display:inline-block; margin-right: 14px;" />',
+          '<img src="' + data.image + '?apikey=0e13da30b101d57c2a3b8e9213058074" alt="' + data.title + '" style="width: 135px; height: 192px; display:inline-block; margin-right: 14px;"  referrerpolicy="no-referrer" />',
           '<div class="info" style="display:inline-block; vertical-align: top;">',
             '<p style="margin:0; font-size: 14px;">书名：' + data.title + '</p>',
             '<p style="margin:0; font-size: 14px;width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="' + data.publisher + '">出版社：' + data.publisher + '</p>',

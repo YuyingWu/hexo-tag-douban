@@ -2,11 +2,28 @@
 
 Hexo tag for Douban.
 
-!["douban"](https://img3.doubanio.com/pics/douban-icons/favicon_48x48.png)
-
 ## Setup
 
 ```
 // hexo root path
 npm i hexo-tag-douban --save
 ```
+
+## Usage
+
+```
+// xxx-post.md
+
+{% douban "https://book.douban.com/subject/26541801" %}
+```
+
+<img src="http://sinacloud.net/demo-static/hexo/hexo-tag-douban-screenshot.png" width="400" />
+
+## Supported Media Type
+
+* Book
+
+## To Support
+
+* Movie
+* Music
