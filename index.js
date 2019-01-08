@@ -38,7 +38,8 @@ var promiseDoubanData = function (host, id) {
     default:
   }
 
-  var url = 'https://api.douban.com/v2/' + type + '/' + id + '?fields=' + fields + '&apikey=0e13da30b101d57c2a3b8e9213058074';
+  // var url = 'https://api.douban.com/v2/' + type + '/' + id + '?fields=' + fields + '&apikey=0e13da30b101d57c2a3b8e9213058074';
+  var url = 'https://api.douban.com/v2/' + type + '/' + id + '?fields=' + fields;
 
   return new Promise(function (resolve, reject) {
     https.get(url, function (res) {
